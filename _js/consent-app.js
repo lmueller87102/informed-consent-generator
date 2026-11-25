@@ -22,6 +22,7 @@
             { label: "University Bremen", value: "bremen" },
             { label: "Ludwig-Maximilians-Universität München", value: "lmu" },
             { label: "University of Stuttgart", value: "stuttgart" },
+            { label: "Hochschule für Technik und Wirtschaft Dresden", value: "htwd"},
             { label: "Other", value: "other" }
         ],
         studyTypes: [
