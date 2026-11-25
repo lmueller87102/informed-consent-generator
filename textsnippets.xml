@@ -27,6 +27,8 @@
         <option lang="en" value="lmu">Ludwig-Maximilians-Universität München, Frauenlobstr. 7a, 80337 München, Germany</option>
         <option lang="de" value="stuttgart">Universität Stuttgart, Pfaffenwaldring 5a, 70569 Stuttgart, Germany</option>
         <option lang="en" value="stuttgart">University of Stuttgart, Pfaffenwaldring 5a, 70569 Stuttgart, Germany</option>
+        <option lang="de" value="htwd">Hochschule für Technik und Wirtschaft Dresden, Friedrich-List-Platz 1, 01069 Dresden, Germany</option>
+        <option lang="en" value="htwd">Hochschule für Technik und Wirtschaft Dresden, Friedrich-List-Platz 1, 01069 Dresden, Germany</option>
     </options>
     <options id="studytype">
         <option lang="de" value="onlinestudy">Onlinestudie</option>
