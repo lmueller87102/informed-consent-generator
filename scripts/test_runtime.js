@@ -48,6 +48,12 @@ async function main() {
     }
 
     exampleButton.click();
+    const institutionSelect = window.document.querySelector("#selectInstitution");
+    if (!institutionSelect) {
+        throw new Error("Institution select is missing.");
+    }
+    institutionSelect.value = "htwd";
+    institutionSelect.dispatchEvent(new window.Event("change", { bubbles: true }));
     generateButton.click();
 
     await new Promise((resolve) => setTimeout(resolve, 1200));
@@ -69,6 +75,11 @@ async function main() {
     }
     if (previewHtml.includes("<script")) {
         throw new Error("Preview contains unsafe script markup.");
+    }
+    if (!previewHtml.includes("Hochschule für Technik und Wirtschaft Dresden") ||
+        !previewHtml.includes("Friedrich-List-Platz 1") ||
+        !previewHtml.includes("01069 Dresden")) {
+        throw new Error("HTW Dresden institution details were not rendered correctly.");
     }
     if (!previewPdfFrame || previewPdfFrame.getAttribute("src") !== "blob:mock-pdf") {
         throw new Error("PDF preview was not rendered through jsPDF.");
